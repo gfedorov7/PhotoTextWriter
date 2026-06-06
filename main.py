@@ -5,24 +5,37 @@ from PIL import Image, ImageDraw, ImageFont
 # ТК ФАЙЛЫ ПЕРЕЗАПИСЫВАЮТСЯ И НИКУДА НЕ СОХРАНЯЮТСЯ
 
 CONFIG = {
+    # #path to the template relative to main.py
     "image_path": "rewards_shablon/2026/IFF_premia/tutor.png", #путь до шаблона относительно main.py
+    # #folder where the diplomas with surnames will be saved
     "output_dir": "diplomas/2026/IFF_premia/rewards_tutor_FVT", #папка куда сохранятся грамоты с фамилиями
 
+    # #path to the font
     "font_path": "fonts/FoglihtenNo06_076.otf", #путь до шрифта
+    # #color in RGB
     "color": (41, 84, 74), #цвет в RGB
+    # #base font size from the template width
     "base_font_scale": 0.1, #базовый размер шрифта от ширины шаблона
+    # #minimum font size
     "min_font_size": 20, #минимальный размер шрифта
+    # #maximum font size
     "max_font_size": 140, #максимальный размер шрифта
 
+    # #maximum allowed font size to ignore the length of the name
     "max_text_width_ratio": 0.75, #максимально допустимый размер шрифта чтобы забить на длину имени
+    # #text shift x in px
     "text_x_offset": 15, #сдвиг текста по x в px
+    # #text shift y in relative units
     "center_y_ratio": .575, #.575 .61 #сдвиг текста по y в относительных единицах
 
+    # #if the name is in 2 lines, then this is the indentation
     "line_spacing_scale": 1.3, #если имя в 2 строки то это отступ
 
+    # #do you need logs
     "debug": True #нужны ли логи
 }
 
+#You write a list of names here.
 # Сюда список фамилий пишешь
 fio_list = [
     "Федорову Глебасу",
