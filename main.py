@@ -5,8 +5,8 @@ from PIL import Image, ImageDraw, ImageFont
 # ТК ФАЙЛЫ ПЕРЕЗАПИСЫВАЮТСЯ И НИКУДА НЕ СОХРАНЯЮТСЯ
 
 CONFIG = {
-    "image_path": "rewards_shablon/tutor.png", #путь до шаблона относительно main.py
-    "output_dir": "rewards_tutor_test", #папка куда сохранятся грамоты с фамилиями
+    "image_path": "rewards_shablon/2026/IFF_premia/tutor.png", #путь до шаблона относительно main.py
+    "output_dir": "diplomas/2026/IFF_premia/rewards_tutor_FVT", #папка куда сохранятся грамоты с фамилиями
 
     "font_path": "fonts/FoglihtenNo06_076.otf", #путь до шрифта
     "color": (41, 84, 74), #цвет в RGB
